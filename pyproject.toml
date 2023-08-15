@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "marketplace-backend"
+version = "0.1.0"
+description = "Marketplace Backend API"
+authors = ["Feri Lukmansyah <47948861+perymerdeka@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "marketplace_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^4.2.4"
+black = "^23.7.0"
+djangorestframework = "^3.14.0"
+markdown = "^3.4.4"
+django-filter = "^23.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
