@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     # installed Apps
     "apps.users",
     "apps.api",
+    "apps.shop",
+    "apps.bank",
 
 ]   
 
@@ -103,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 #  SET AUTH USER MODEL 
-AUTH_USER_MODEL = "apps.users"
+AUTH_USER_MODEL = "users.usersModel"
 
 
 # Internationalization
