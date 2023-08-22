@@ -28,4 +28,9 @@ class UsersModel(AbstractBaseUser, PermissionsMixin):
 
 class PaymentMethodModel(models.Model):
     default_payment = models.BooleanField(default=False)
+    holder_name = models.CharField(max_length=255)
     account_number = models.CharField(max_length=30, validators=[AccountNumberValidator])
+    bank = models.ForeignKey("bank.BankModel", on_delete=models.SET_NULL, null=True)
+
+    def __str__(self) -> str:
+        return self.account_number
